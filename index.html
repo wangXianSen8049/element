@@ -112,6 +112,9 @@
 				z-index: 1000;
 				cursor: pointer;
 			}
+			#tu{
+				display: none;
+			}
 		</style>
 	</head>
 
@@ -131,6 +134,7 @@
 				<img src="http://zixuephp.net/static/images/wechatshare.png" width="32"> 
 			</div>
 		</div>
+		<img id="tu" src="tu.jpg"  >
 		<div id="container"></div>
 		<div id="info">贝爷的魔立方</div>
 		<div id="menu">
@@ -2099,7 +2103,7 @@ THREE.CSS3DRenderer = function () {
 			//获取文章标题
 			ftit = $('.pctitle').text();
 			//获取网页中内容的第一张图片
-			flink = $('.pcdetails img').eq(0).attr('src');
+			flink = $('#tu').attr('src');
 			if(typeof flink == 'undefined'){
 				flink='';
 			}
